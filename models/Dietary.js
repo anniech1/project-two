@@ -12,40 +12,9 @@ Dietary.init(
     autoIncrement: true,
     primaryKey: true,
     },
-    halal: {
-    type: DataTypes.BOOLEAN,
+    dietary_name: {
+    type: DataTypes.STRING,
     allowNull: false,
-    defaultValue: true,
-    },
-    kosher: {
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: true,
-    },
-    vegetarian: {
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: true,
-    },
-    vegan: { 
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: true,
-    },
-    sugar_free: { 
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: true,
-    },
-    gluten_free: { 
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: true,
-    },
-    dairy_free: { 
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: true,
     },
     },
   {

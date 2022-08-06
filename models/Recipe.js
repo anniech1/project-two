@@ -32,23 +32,23 @@ Recipe.init(
     //   key: 'id'
     // },
     },
-    // dietary: { 
-    // type: DataTypes.BOOLEAN,
-    // allowNull: false,
+    dietary: { 
+    type: DataTypes.STRING,
+    allowNull: false,
     // references: {
     //   model: 'Dietary',
     //   key: 'id'
     // },
     // },
     // user_id: { 
-    // type: DataTypes.STRING,
+    // type: DataTypes.INTEGER,
     // allowNull: false,
     // references: {
     //   model: 'User',
     //   key: 'id'
     // },
     },
-    // },
+    },
   {
     sequelize,
     timestamps: false,
