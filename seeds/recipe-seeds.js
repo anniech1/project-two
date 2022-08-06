@@ -7,8 +7,8 @@ const recipeData = [
     ingredients: 'eggs, flour, water, sugar, and salt.',
     instructions: 'to be announced',
     regions: 'East Africa',
-    dietary: 1,
-    user_id: 1,
+    dietary: "Halal",
+    // user_id: 1,
   },
 ];
 
