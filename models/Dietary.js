@@ -6,7 +6,7 @@ class Dietary extends Model {}
 
 Dietary.init(
   {
-    id: { //pk
+    id: { 
     type: DataTypes.INTEGER,
     allowNull: false,
     autoIncrement: true,
@@ -15,30 +15,37 @@ Dietary.init(
     halal: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
     },
     kosher: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
     },
     vegetarian: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
     },
     vegan: { 
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
     },
     sugar_free: { 
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
     },
     gluten_free: { 
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
     },
     dairy_free: { 
     type: DataTypes.BOOLEAN,
     allowNull: false,
+    defaultValue: true,
     },
     },
   {
