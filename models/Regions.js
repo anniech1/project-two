@@ -6,7 +6,7 @@ class Regions extends Model {}
 
 Regions.init(
   {
-    id: { //pk
+    id: { 
       type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
