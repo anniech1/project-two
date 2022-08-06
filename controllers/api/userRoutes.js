@@ -11,7 +11,8 @@ router.get("/",(req,res)=>{
     console.log("Calling all Users, we're sharing recipes!");
     // finding all the users
     User.findAll({
-        include:[recipe]
+        // until we add the recipe data
+        // include:[recipe]
     }).then(data=>{
         res.json(data)
     }).catch(err=>{
