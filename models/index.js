@@ -1,4 +1,4 @@
-const User = require(".User");
+const User = require("./User");
 // leave out until recipe models are added
 // const Recipe = require("./Recipe")
 
@@ -11,9 +11,11 @@ const User = require(".User");
 // })
 // Recipe.belongsTo(User);
 
-module.exports={
-    User
-    // leave commented until recipes are imported
-    // ,
-    // Recipe
-}
+module.exports=User
+
+// {
+//     User
+//     // leave commented until recipes are imported
+//     // ,
+//     // Recipe
+// }

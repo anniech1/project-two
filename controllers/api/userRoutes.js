@@ -2,29 +2,34 @@ const express = require('express');
 const router = express.Router();
 // for user Auth:
 const bcrypt = require("bcrypt");
-const { User,Gobble } = require('../../models');
+const User = require('../../models');
 
 // to get all users, and includes their recipes
 // url: ${PORT}/api/users
 router.get("/",(req,res)=>{
     // log msg to check if route works
-    console.log("Calling all Users, we're sharing recipes!");
-    // finding all the users
-    User.findAll({
-        // until we add the recipe data
-        // include:[recipe]
-    }).then(data=>{
+    console.log("Calling all Users, we're sharing recipes!")
+    User.findAll().then(data=>{
         res.json(data)
     }).catch(err=>{
-        res.status(500).json({msg:"ERROR",err})
+        res.status(500).json({msg:"nope",err})
     })
+    // finding all the users
+    // User.findAll({
+    //     // until we add the recipe data
+    //     include:[Recipe]
+    // }).then(data=>{
+    //     res.json(data)
+    // }).catch(err=>{
+    //     res.status(500).json({msg:"ERROR",err})
+    // })
 })
 
 // creating/adding a user
 // url: ${PORT}/api/users
 router.post("/",(req,res)=>{
     // log msg to check if route works:
-    console.log("Welcome new user! Hope you're hungry!");
+    console.log("Welcome new user! Hope you're hungry!")
 
     User.create({
         // must check that this matches the format of USER MODEL
@@ -32,7 +37,9 @@ router.post("/",(req,res)=>{
         email:req.body.email,
         password:req.body.password
     }).then(data=>{
-        res.status(500).json({msg:"ERROR",})
+        res.json(data)
+    }).catch(err=>{
+        res.status(500).json({msg:"ERROR",err})
     })
 })
 

@@ -1,11 +1,16 @@
 const sequelize = require("../config/connection");
 
-const { User, Recipe } = require("../models");
+const User = require("../models");
 
 const users = [
     {
         username: "DashEats",
         email: "dash@dog.com",
+        password: "gottapee"
+    },
+    {
+        username: "PepperPotts",
+        email: "pepper@cat.com",
         password: "gottapee"
     }
 ]
@@ -25,3 +30,5 @@ const seedMe = async ()=>{
     // await Recipe.bulkCreate(recipes);
     process.exit(0)
 }
+
+seedMe()
