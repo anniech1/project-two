@@ -17,18 +17,19 @@ const apiRoutes = require("./api")
 //     res.render("club",req.session.user)
 // })
 
-// router.get("/readsession",(req,res)=>{
-//     res.json(req.session)
-// })
+// accessing session object
+router.get("/readsession",(req,res)=>{
+    res.json(req.session)
+})
 
-// router.get("/addcounter",(req,res)=>{
-//     if(req.session.counter){
-//         req.session.counter++
-//     } else {
-//         req.session.counter=1
-//     }
-//     res.send("req.session updated")
-// })
+router.get("/addcounter",(req,res)=>{
+    if(req.session.counter){
+        req.session.counter++
+    } else {
+        req.session.counter=1
+    }
+    res.send("req.session updated")
+})
 
 // router.get("/logout",(req,res)=>{
 //     req.session.destroy();
