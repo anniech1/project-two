@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+<<<<<<< HEAD
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
@@ -65,3 +66,11 @@ User.init(
 );
 
 module.exports = User;
+
+    // is this the same as the other beforeCreate?? Will test after merging -KG
+    // hooks:{
+    //     beforeCreate:userObj=>{
+    //         userObj.password = bcrypt.hashSync(userObj.password,4);
+    //         return userObj;
+    //     }
+    // }
