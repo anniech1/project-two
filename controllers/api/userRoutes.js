@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 // for user Auth:
 const bcrypt = require("bcrypt");
+// change to an object and add {Recipes} when adding recipes
 const User = require('../../models');
 
 // to get all users, and includes their recipes
@@ -47,7 +48,7 @@ router.post("/",(req,res)=>{
 // url: ${PORT}/api/users/login
 router.post("/login",(req,res)=>{
     // log msg to check if route works
-    console.log("Welcome Back User! Missed you <3");
+    console.log("Welcome Back User! Missed you <3")
 
     User.findOne({
         where:{
@@ -55,9 +56,9 @@ router.post("/login",(req,res)=>{
         }
     }).then(foundUser=>{
         // checking if there is a user by that email
-        if(!foundUser){
-                return res.status(401).json({msg:"who goes there?? (Invalid login credentials)"})
-        }
+        // if(!foundUser){
+        //         return res.status(401).json({msg:"who goes there?? (Invalid login credentials)"})
+        // }
         if(!bcrypt.compareSync(req.body.password,foundUser.password)){
             return res.status(401).json({msg:"who goes there?? (Invalid login credentials)"})
         }
