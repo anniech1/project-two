@@ -62,6 +62,11 @@ router.post("/login",(req,res)=>{
         if(!bcrypt.compareSync(req.body.password,foundUser.password)){
             return res.status(401).json({msg:"who goes there?? (Invalid login credentials)"})
         }
+        req.session.user={
+            id:foundUser.id,
+            username:foundUser.username,
+            email:foundUser.email
+        }
         return res.status(200).json(foundUser)
     }).catch(err=>{
         res.status(500).json({msg:"ERROR", err})
