@@ -10,6 +10,7 @@ const apiRoutes = require("./api")
 //     res.render("login")
 // })
 
+//protecting routes - seems to require handlebars MVC vid 1hr mark 
 // router.get("/secretclub",(req,res)=>{
 //     if(!req.session.user){
 //         res.redirect("/login")

@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // session stuff!
 const sess = {
-  secret: "shhh!",
+  secret: process.env.SESSION_SECRET,
   cookie: {
     maxAge: 1000 * 60 * 60 * 2,
   },
