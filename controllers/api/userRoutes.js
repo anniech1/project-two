@@ -56,9 +56,9 @@ router.post("/login",(req,res)=>{
         }
     }).then(foundUser=>{
         // checking if there is a user by that email
-        // if(!foundUser){
-        //         return res.status(401).json({msg:"who goes there?? (Invalid login credentials)"})
-        // }
+        if(!foundUser){
+                return res.status(401).json({msg:"who goes there?? (Invalid login credentials)"})
+        }
         if(!bcrypt.compareSync(req.body.password,foundUser.password)){
             return res.status(401).json({msg:"who goes there?? (Invalid login credentials)"})
         }
