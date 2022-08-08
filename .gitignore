@@ -104,4 +104,7 @@ dist
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
 >>>>>>> kg-auth
+=======
+>>>>>>> 41277d781fa28495793b603a0bd9739672133e82
