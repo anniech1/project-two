@@ -2,21 +2,33 @@
     {
       "name": "Asiya",
       "email": "asiya@hotmail.com",
-      "password": "password"
+      "password": "password",
+      "username":"as",
+      "recipeLibrary":true
     },
     {
       "name": "Kristina",
       "email": "kristina@gmail.com",
-      "password": "password123"
+      "password": "password123",
+      "username":"as",
+      "recipeLibrary":true
+
+
     },
     {
       "name": "Akshata",
       "email": "akshata@aol.com",
-      "password": "password345"
+      "password": "password345",
+      "username":"as",
+      "recipeLibrary":true
+
     },
     {
       "name": "Annie",
       "email": "annie@msn.com",
-      "password": "password111"
+      "password": "password111",
+      "username":"as",
+      "recipeLibrary":true
+
     }
   ]
