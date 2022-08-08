@@ -100,7 +100,7 @@ const seedDatabase = async () => {
     for (const recipe of recipeData) {
     await Recipe.create({
       ...recipe,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
+      UserId: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 
@@ -109,7 +109,7 @@ const seedDatabase = async () => {
   for (const region of regionData) {
     await Regions.create({
       ...region,
-      recipe_id: "1",
+      RecipeId: "1",
     });
   }
 
@@ -118,7 +118,7 @@ const seedDatabase = async () => {
   for (const dietary of dietaryData) {
     await Dietary.create({
       ...dietary,
-      recipe_id: "1",
+      RecipeId: "1",
     });
   }
 
