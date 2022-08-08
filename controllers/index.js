@@ -32,10 +32,11 @@ router.get("/addcounter",(req,res)=>{
     res.send("req.session updated")
 })
 
-// router.get("/logout",(req,res)=>{
-//     req.session.destroy();
-//     res.json({msg:"logged out!"})
-// })
+// LOG OUT!!! needs a button or link in front end via handlebars
+router.get("/logout",(req,res)=>{
+    req.session.destroy();
+    res.json({msg:"logged out!"})
+})
 
 router.use("/api",apiRoutes)
 
