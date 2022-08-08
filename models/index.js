@@ -21,7 +21,7 @@ const User = require("./User");
 //     // Recipe
 // }
 
-const User = require('./User');
+//const User = require('./User');
 const Recipe = require('./Recipe');
 const Regions = require('./Regions');
 const Dietary = require('./Dietary');
