@@ -5,11 +5,11 @@ const withAuth = require('../../utils/auth');
 router.get('/', async (req, res) => {
   try {
     // Get all recipes and JOIN with user data
-    const dietaryData = await Dietary.findAll({
+    const regionsData = await Regions.findAll({
       
     });
 
-    res.status(200).json(dietaryData);
+    res.status(200).json(regionsData);
   } catch(err){
     res.status(400).json(err);
   };
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 
 
 /*
-//Add new dietary
+//Add new region
 router.post('/', withAuth, async (req, res) => {
   try {
     const newRegion = await Region.create({
@@ -36,12 +36,12 @@ router.post('/', withAuth, async (req, res) => {
 //update region
 router.put('/', withAuth, async (req, res) => {
   try {
-    const newDietary = await Region.create({
+    const newRegion = await Region.create({
       ...req.body,
       UserId: req.session.user_id,
     });
 
-    res.status(200).json(newDietary);
+    res.status(200).json(newRegion);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -50,19 +50,19 @@ router.put('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const dietaryData = await Dietary.destroy({
+    const regionsData = await Regions.destroy({
       where: {
         id: req.params.id,
         UserId: req.session.user_id,
       },
     });
 
-    if (!dietaryData) {
+    if (!regionsData) {
       res.status(404).json({ message: 'No recipe with this id!' });
       return;
     }
 
-    res.status(200).json(dietaryData);
+    res.status(200).json(regionsData);
   } catch (err) {
     res.status(500).json(err);
   }
