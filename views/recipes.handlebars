@@ -1,34 +1,33 @@
 <section id="recipeFlexCards">
-{{#each recipe}}
+{{#each Recipe}}
     <div class="row">
         <div class="col s12">
             <div class="card">
                 <div class="card-image">
-                <img src="{{Recipe.image}}">
-                <span class="card-title" <a href="/recipe/{{Recipe.id}}">{{Recipe.dish_name}}</span>
+                <img src="{{imageUrl}}">
+                <span class="card-title" <a href="/recipe/{{id}}">{{dish_name}}</span>
                 </div>
                 <div class="card-content">
                     <div id="recipe-author">
-                        <p>Written by {{Recipe.username}}</p>
+                        <p>Written by {{Recipe.userId}}</p>
                     </div>
                     <div id="recipe-region">
-                       From: <p>{{Recipe.Regions.id}}</p>
+                       From: <p>{{regions}}</p>
                     </div>
                      <div id="recipe-time">
-                       Estimated time to prepare: <p>{{Recipe.timer}} minutes</p>
+                       Estimated time to prepare: <p>{{timer}} minutes</p>
                     </div>
                      <div id="recipe-ingredients">
-                       For this recipe, you'll need: <p>{{Recipe.ingredients}}</p>
+                       For this recipe, you'll need: <p>{{ingredients}}</p>
                     </div>
                      <div id="recipe-instructions">
-                       To create {{Recipe.dish_name}}: <p>{{Recipe.instructions}}</p>
+                       To create {{dish_name}}: <p>{{instructions}}</p>
                     </div>
                 </div>
                 <div class="card-action">
-                {{#each Tags}}
-                    <button class="tagBtn">{{tag}}</button>
-                {{/each}}
-            </div>
+                    <button class="regionBtn">{{regions}}</button>
+                    <button class="dietaryBtn">{{dietary}}</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -36,27 +35,3 @@
 
 {{/each}}
 </section>
-<h1>{{Recipe.dish_name}} </h1>
-<h2>
-
-</h2>
-<img src="{{Recipe.image}}">
-<div>
-
-</div>
-<h2>Farmer: <a href="/farmer/{{Farmer.id}}">{{Farmer.email}}</a></h2>
-<h3>{{Farmer.city}}</h3>
-<p>{{description}}</p>
-<h3>{{dob}}</h3>
-{{#each Tags}}
-  <button class="tagBtn">{{tag}}</button>
-{{/each}}
-{{#if CaretakerId}}
-  <h2>Currently enjoying life with {{Caretaker.email}}</h2>
-{{else}}
-  <h2>This pig is looking for a home!</h2>
-  {{#if isCaretaker}}
-    <button data-userid="{{userId}}" data-pigid="{{id}}"id="adoptBtn">Adopt this Pig!</button>
-    <script src="/js/adopt.js"></script>
-  {{/if}}
-{{/if}}
