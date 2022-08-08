@@ -1,3 +1,4 @@
+const loginForm = document.querySelector("#login-form");
 document.querySelector("#login").addEventListener("submit",e=>{
     e.preventDefault();
     const userObj = {
@@ -21,7 +22,6 @@ document.querySelector("#login").addEventListener("submit",e=>{
 })
 
 const signupForm = document.querySelector("#signup-form");
-
 signupForm.addEventListener("submit",e=>{
     e.preventDefault();
         const userObj = {
