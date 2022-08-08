@@ -1,38 +1,75 @@
 [
     {
       
-      "dish_name": "Mawalah",
-      "ingredients": "eggs ,flour,water, sugar, salt",
-      "instructions": "to be announced",
+      "dish_name": "Mawalah (Somali Sweet Pancake)",
+      "ingredients": "Two cups all-purpose flour, two and one-half cups milk or water, two large eggs, one tablespoon granulated sugar or more depending on sweetness preference, one-half teaspoon ground cardamom, pinch kosher salt, two tablespoons canola oil or butter, for frying, Honey, butter, or sugar, for garnish",
+      "instructions": "Gather the ingredients, and beat or whisk all ingredients together in a bowl. Alternatively, mix together with a hand-held blender. Heat up a frying pan with enough butter or oil to lightly coat surface. Ladle some batter into pan and swirl such that batter distributes to make a thin layer which spreads towards curving sides of pan. Fry for about a minute or until lightly golden, then flip over and fry another minute or so on the other side.Serve malawah by spreading melted butter and honey on top or sprinkling some sugar on top.",
       "regions": "East Africa",
-      "dietary": "Halal"
+      "dietary": "Vegetarian"
       
     },
     {
       
         "dish_name": "Butter Chicken Curry",
-        "ingredients": "butter,onions,chicken breasts,garlic,gingerroot,brown sugar,garam masala,turmeric,cumin,chili powder,crushed tomatoes,sour cream",
-        "instructions": "Add all ingredients except for sour cream, rice, cilantro and naan to slow cooker in the order they are listed above and cook on high for 3 hours, or on low for 6 hours.Remove lid and stir in sour cream. Add rice to large bowls and top with chicken mixture, then garnish with cilantro and serve with naan (if desired). Serve and enjoy!",
+        "ingredients": "Butter, onions, chicken breasts, garlic, ginger-root, brown sugar, garam masala powder, turmeric, cumin, chili powder, crushed tomatoes,sour cream",
+        "instructions": "Add all ingredients except for sour cream, rice, cilantro and naan to slow cooker in the order they are listed above and cook on high for three hours, or on low for six hours. Remove lid and stir in sour cream. Add rice to large bowls and top with chicken mixture, then garnish with cilantro and serve with naan (if desired). Serve and enjoy!",
         "regions": "South Asia",
         "dietary": "Halal"
         
       },
       {
       
-        "dish_name": "Cake",
-        "ingredients": "eggs ,flour,water, sugar, salt",
-        "instructions": "to be announced",
-        "regions": "East Africa",
+        "dish_name": "Bistek Tagalog (Sirloin Steak, Filipino-style)",
+        "ingredients": "One pound beef sirloin, thinly sliced, one-half cup lemon juice, divided into one-fourth cups, one-fourth cup oil, 1 medium onion sliced into rings, one-fourth cup soy sauce, one-half cup water",
+        "instructions": "Marinate the beef in one-fourth cup lemon juice for thirty minutes. Heat the oil in a frying pan and saute the onion slices until lightly browned and then set them aside. Drain the marinated beef slices, reserving the marinade. Saute the beef in the same frying pan for one-two minutes on each side.  Combine the remaining lemon juice with the soy sauce and water. Pour into the frying pan with reserved beef marinade. Add the reserved onion rings to the pan and simmer for one-two minutes. Serve hot with steamed white rice and fried potatoes (either wedges or french fries)",
+        "regions": "Southeast Asia",
         "dietary": "Halal"
         
       },
       {
       
-        "dish_name": "Mawalah123",
-        "ingredients": "eggs ,flour,water, sugar, salt",
-        "instructions": "to be announced",
+        "dish_name": "Shaah Cadays (Somali Spiced Tea with Milk)",
+        "ingredients": "Two (two-inch) pieces cinnamon stick, five green cardamom pods, five whole cloves, two cups cold water, three tablespoons loose black tea (or two-three black tea bags), three tablespoons granulated sugar, plus more as needed, two cups whole milk",
+        "instructions": "Place the cinnamon, cardamom, cloves, and peppercorns in a mortar and crush with a pestle until coarsely ground (or crush on a counter-top or on a cutting board with the bottom of a heavy pot). Transfer the spices to a medium saucepan set over medium heat and cook, stirring, until very fragrant, about one minute. Add the water, teabags, and sugar and increase the heat to high. Once bubbles form around the edge, immediately reduce the heat to low and let the mixture simmer for five minutes. Stir in the milk and let it cook until milk is warm/hot to your preference, then turn off the heat. Strain through a fine-mesh sieve into a teapot, pitcher, or straight into tea mugs. Serve immediately while hot and add more sugar to taste if you would like.",
         "regions": "East Africa",
-        "dietary": "Halal"
+        "dietary": "Vegan"
+        
+      },
+      {
+      
+        "dish_name": "Brazo de Mercedes",
+        "ingredients": "For the Filling: Eight egg yolks, One and one-fourth cups sweetened, condensed milk, two tablespoons butter, one tablespoon sugar, two tablespoons lime, lemon, or calamansi zest. For the Meringue: Eight egg whites, one teaspoon cream of tartar, one and one-fourth cups sugar, one teaspoon almond extract (optional), one-half cup confectioners’ sugar",
+        "instructions": "For the Filling: Mix egg yolks and sweetened condensed milk over a double boiler. Cook, stirring constantly until the mixture starts to thicken ~about twenty minutes. Add the butter and sugar and continue cooking/stirring for five minutes. Add the citrus zest into the mixture. Continue stirring over heat until the color changes to light orange, and the texture thickens even more, five-ten minutes. Remove from heat and set aside. For the Meringue: Beat the egg whites and cream of tartar in an electric mixer to the soft peak stage. Slowly add the sugar and almond extract, and continue beating until stiff peak stage (about ten minutes or so). Preheat your oven to 375F. Line two greased baking trays with waxed paper and grease the paper also. Sprinkle confectioners sugar onto the waxed paper. Set one aside. Gently spread the egg white mixture into ONE of the pans. Bake until the top is lightly browned ~about ten minutes. When the meringue is done baking, invert it into the empty prepared baking tray so the browned side is facing down. Spread the egg yolk filling onto the meringue. Gently roll the meringue up around the filling, and let the roll rest on its seam. Allow to rest for at least thirty minutes to one hour in a cool place to set up. Before serving, dust with more confectioners sugar, slice and serve!",
+        "regions": "Southeast Asia",
+        "dietary": "Gluten-Free"
+        
+      },
+      {
+      
+        "dish_name": "Loukoumades",
+        "ingredients": "For the loukoumades: One-cup lukewarm water, two tablespoons sugar, two tablespoons active dry yeast, three-cups all-purpose flour, two tablespoons cornstarch, one-cup lukewarm milk, three tablespoons extra virgin olive oil, oil for frying, one-third cup crushed nuts (such as walnuts, cashews or pistachios), ground cinnamon (to serve), powdered sugar (to serve). For the syrup: One-cup water, one-cup honey, and one-cup sugar",
+        "instructions": "In a large bowl, mix together the water, sugar, and yeast. Set aside for ten minutes until the yeast begins to bubble and the mixture gets foamy. Add the flour, corn starch, milk, and olive oil. Mix with a wooden spoon to combine, then knead for about five minutes until the dough is smooth. Cover the bowl tightly with plastic wrap and set it aside in a warm place for one hour until the dough has doubled in size. While the dough is rising, prepare the honey syrup. In a small saucepan, combine one cup of water with the sugar and honey. Stir and bring to a boil, then lower the heat and let simmer for about twenty minutes. Remove from the heat and set aside to cool. When the dough is ready, punch it down to deflate. Lightly oil your hands (this helps so that the dough does not stick). Using your hands, form the dough into small golf-size balls and arrange them on a large tray or sheet pan (this will make anywhere from forty to sixty small donuts). Fill a small saucepan about one-half up with grapeseed oil (or frying oil of your choice). Heat the oil over medium heat until bubbling (if you have a thermometer, the oil should measure at around 325F). Prepare a large tray lined with a paper towel and set it nearby (you will use this to drain the donuts as they come out of the frying pan). Take a lightly oiled spoon and carefully add the donut balls to the heated oil (do not crowd the saucepan). Fry the loukoumades for about two to three minutes, turning them around with a spoon, until they are golden brown on all sides. Using a slotted spoon, transfer the fried loukoumades to the paper-towel lined tray and drain briefly, then dunk the loukoumades in the prepared syrup (they should still be hot while the syrup is cool). Toss them around and then transfer to a serving plate. Continue until all the loukoumades have been fried and dunked in the syrup. Once you have all the loukoumades on your serving platter, drizzle with more syrup (or save the syrup to the side in a small bowl to add as needed). Sprinkle it with ground sugar and cinnamon to serve",
+        "regions": "Southern Europe",
+        "dietary": "Vegetarian"
+        
+      },
+      {
+      
+        "dish_name": "Espresso Freddo",
+        "ingredients": "Strong black coffee for two (for example two x double espresso), cooled, twenty ice cubes, approximately one-half cup milk or milk alternative, sugar, and vanilla",
+        "instructions": "Make a strong coffee and allow your coffee to cool down. Divide half of the coffee between two glasses and pour the other half in the blender (both a power blender and a cheap blender will work here, the difference is that ice may not get crushed as much in a low-power blender). Add a touch of sugar and vanilla if you like your coffee sweetened. Add ice cubes and blend on high for a few seconds, until most of the ice is crushed and the coffee turns a little frothy. Top your coffee with the ice-coffee mixture and (optionally) top up with cold milk to take the edge off",
+        "regions": "Southern Europe",
+        "dietary": "Vegetarian"
+        
+      },
+      {
+      
+        "dish_name": "Indian Carrot Pudding",
+        "ingredients": "Carrots, Ghee, Milk, Sugar, Cardamom Powder, Cashews",
+        "instructions": "Peel the carrots, and shred the carrots. Heat a wok on medium heat, once hot, add one tbsp of ghee. Add the carrots and saute for about eight minutes until the color of the carrots changes. Keep stirring to avoid burning. This is a labor of love. Add milk to the carrots. Cook the carrots and milk down for six-seven minutes until all the milk is absorbed by the carrots. Keep stirring to avoid sticking and burning. Once all the milk is absorbed, ddd the sugar. Immediately after, add one more tbsp of ghee. Keep stirring. until all the water is absorbed which is left behind by the sugar. This process will take about five-six minutes. Once done, add cardamom powder and stir. Add chopped cashews. You can also add almonds, pistachios, and raisins. Mix well. Dry roast the Carrot Pudding for a couple more minutes so the color of the carrots deepens slightly. Turn off the stove and enjoy!",
+        "regions": "Southeast Asia",
+        "dietary": "Gluten-Free"
         
       }
+      
   ]

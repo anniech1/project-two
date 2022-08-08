@@ -17,7 +17,7 @@ Recipe.init(
     allowNull: false,
     },
     ingredients: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: false,
     },
     instructions: {
@@ -27,26 +27,10 @@ Recipe.init(
     regions: { 
     type: DataTypes.STRING,
     allowNull: false,
-    // references: {
-    //   model: 'Regions',
-    //   key: 'id'
-    // },
     },
     dietary: { 
     type: DataTypes.STRING,
     allowNull: false,
-    // references: {
-    //   model: 'Dietary',
-    //   key: 'id'
-    // },
-    // },
-    // user_id: { 
-    // type: DataTypes.INTEGER,
-    // allowNull: false,
-    // references: {
-    //   model: 'User',
-    //   key: 'id'
-    // },
     },
     },
   {
