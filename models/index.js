@@ -1,3 +1,4 @@
+
 const User = require("./User");
 // leave out until recipe models are added
 // const Recipe = require("./Recipe")
@@ -11,7 +12,7 @@ const User = require("./User");
 // })
 // Recipe.belongsTo(User);
 
-module.exports=User
+
 
 // {
 //     User
@@ -19,3 +20,27 @@ module.exports=User
 //     // ,
 //     // Recipe
 // }
+
+const User = require('./User');
+const Recipe = require('./Recipe');
+const Regions = require('./Regions');
+const Dietary = require('./Dietary');
+
+
+
+User.hasMany(Recipe, {
+onDelete: 'CASCADE'
+});
+
+Recipe.hasMany(Dietary)
+
+
+Recipe.hasOne(Regions)
+
+module.exports = {
+User,
+Recipe,
+Regions,
+Dietary,
+};
+
