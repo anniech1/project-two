@@ -2,6 +2,30 @@ const router = require('express').Router();
 const { User, Recipe } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+const cloudinary = require("cloudinary").v2;
+
+const multer = require("multer");
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
+
+
+
+
+const storage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: async (req, file) => {
+    // async code using `req` and `file`
+    // ...
+    return {
+      folder: 'sarapp_img',
+      format: 'jpeg',
+      public_id: 'recipe_img',
+    };
+  },
+});
+
+
+const upload = multer({ storage: storage });
+
 router.get('/', async (req, res) => {
   try {
     // Get all recipes and JOIN with user data
@@ -16,7 +40,9 @@ router.get('/', async (req, res) => {
  
 });
 
-
+router.post('/img', upload.single("picture"), async (req, res) => {
+  return res.json({ picture: req.file.path });
+});
 
 router.post('/', withAuth, async (req, res) => {
   try {
