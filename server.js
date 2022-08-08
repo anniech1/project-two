@@ -42,6 +42,9 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
+const cloudinary = require("cloudinary").v2;
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
+const multer = require("multer");
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -59,6 +62,24 @@ const sess = {
     db: sequelize
   })
 };
+
+
+cloudinary.config({
+  cloud_name: "dbusqnlkm",
+  api_key: "542873976966233",
+  api_secret: "6bQ42lsRLv16RbqEkF0j8CGqRJ8",
+});
+
+
+const storage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: "DEV",
+  },
+});
+
+
+
 
 app.use(session(sess));
 
