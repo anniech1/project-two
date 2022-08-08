@@ -2,6 +2,19 @@ const router = require('express').Router();
 const { Recipe, User, Regions, Dietary } = require('../models');
 const withAuth = require('../utils/auth');
 
+router.get('/', async (req,res)=>{
+    const allRecipeData = await Recipe.findAll({
+        include:[
+            {
+                model: User,
+                attributes: ['name']
+            }
+        ]
+    })
+    res.render("home")
+})
+
+
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data

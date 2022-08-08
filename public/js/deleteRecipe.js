@@ -8,7 +8,7 @@ document.querySelector("#deleteBtn").addEventListener("submit",e=>{
         if(res.ok){
            location.reload()
         } else {
-            alert("Error delete recipe")
+            alert("Error deleting recipe")
         }
     })
 })
