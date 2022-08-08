@@ -10,24 +10,21 @@
 
 <body>
     <header>
-        <a href="/">sarApp</a>
+        <a href="/">sarApp</a> 
+            {{!<button id="postBtn">Post</button>}}
         {{#if is_loggedin}}
-            <button id="postBtn">Post</button>
             <a href="/profile">My Recipes</a>
              <a href="/logout">Logout</a>
+        {{else}}
+            <a href="/login">/a>
+        {{/if}}
         </header>
         <main>
            <a href="/home">/a>
            {{{body}}}
         </main>
-        <script src="/js/postBtn.js"></script>
-        {{else}}
-        </header>
-         <main>
-            <a href="/login">/a>
-        </main>
         <script src="/js/login.js"></script>
-        {{/if}}
+        {{!<script src="/js/postBtn.js"></script>}}
     <footer></footer>
 </body>
 </html>
