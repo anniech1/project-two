@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sarApp</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
+</head>
 
 <body>
-    <header>
+  <!--  <header>
         <a href="/">sarApp</a>
         {{#if is_loggedin}}
             <button id="postBtn">Post</button>
@@ -29,5 +29,43 @@
         <script src="/js/login.js"></script>
         {{/if}}
     <footer></footer>
+-->
+
+<nav class="nav-extended blue-text blue lighten-5">
+    <div class="nav-wrapper">
+      
+      <ul id="nav-mobile" class="left hide-on-med-and-down blue-text">
+        <li><a href="/" class="blue-text">Home</a></li>
+        <li><a href="/" class="dashboard blue-text">Dashboard</a></li>
+        <li> {{#if logged_in}}
+        <a href="/profile" class="blue-text">Profile</a> 
+        <li><button class="no-button blue-text" id="logout">Logout</button></li>
+       <li>{{else}}
+        <a href="/login" class="blue-text">Login</a>
+        {{/if}}</li>
+      </ul>
+       </div>
+       <div class="nav-content">
+      <span class="nav-title">The Recipes!!</span>
+    </div>
+  </nav>
+  
+
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+   
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 </html>

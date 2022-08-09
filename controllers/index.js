@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const apiRoutes = require("./api")
-
+const homeRoutes = require('./homeRoutes');
 
 // router.get('/',(req,res)=>{
 //     res.render("home")
@@ -38,6 +38,7 @@ router.get("/addcounter",(req,res)=>{
 //     res.json({msg:"logged out!"})
 // })
 
-router.use("/api",apiRoutes)
+router.use("/api",apiRoutes);
+router.use('/', homeRoutes);
 
 module.exports = router;
