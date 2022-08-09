@@ -21,6 +21,15 @@
       },
       {
       
+        "dish_name": "Cake",
+        "ingredients": "eggs ,flour,water, sugar, salt",
+        "instructions": "to be announced",
+        "regions": "East Africa",
+        "dietary": "Halal",
+        "img_url":"https://res.cloudinary.com/dbusqnlkm/image/upload/v1659985915/cld-sample-4.jpg"
+      },
+      {
+      
         "dish_name": "Bistek Tagalog (Sirloin Steak, Filipino-style)",
         "ingredients": "One pound beef sirloin, thinly sliced, one-half cup lemon juice, divided into one-fourth cups, one-fourth cup oil, 1 medium onion sliced into rings, one-fourth cup soy sauce, one-half cup water",
         "instructions": "Marinate the beef in one-fourth cup lemon juice for thirty minutes. Heat the oil in a frying pan and saute the onion slices until lightly browned and then set them aside. Drain the marinated beef slices, reserving the marinade. Saute the beef in the same frying pan for one-two minutes on each side.  Combine the remaining lemon juice with the soy sauce and water. Pour into the frying pan with reserved beef marinade. Add the reserved onion rings to the pan and simmer for one-two minutes. Serve hot with steamed white rice and fried potatoes (either wedges or french fries)",

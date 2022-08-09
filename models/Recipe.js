@@ -36,6 +36,10 @@ Recipe.init(
       type: DataTypes.STRING,
       allowNull: true,
       },
+    header_img: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      },
     },
   {
     sequelize,
