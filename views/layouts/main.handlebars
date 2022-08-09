@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sarApp</title>
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <!--  <header>
+        <a href="/">sarApp</a>
+        {{#if is_loggedin}}
+            <button id="postBtn">Post</button>
+            <a href="/profile">My Recipes</a>
+             <a href="/logout">Logout</a>
+        </header>
+        <main>
+           <a href="/home">/a>
+           {{{body}}}
+        </main>
+        <script src="/js/postBtn.js"></script>
+        {{else}}
+        </header>
+         <main>
+            <a href="/login">/a>
+        </main>
+        <script src="/js/login.js"></script>
+        {{/if}}
+    <footer></footer>
+-->
+
+    <nav class="nav-extended white-text white lighten-5">
+        <div class="nav-wrapper">
+            <span class="nav-title">sarApp &#127807;</span>
+             <ul id="nav-mobile" class="left hide-on-med-and-down white-text">
+                <li><a href="/" class="white-text">Home</a></li>
+                <li><a href="/" class="dashboard white-text">Dashboard</a></li>
+                <li> {{#if logged_in}}
+                <a href="/profile" class="white-text">Profile</a> 
+            <li><button class="no-button white-text" id="logout">Logout</button></li>
+            <li>{{else}}
+                <a href="/login" class="white-text">Login</a>
+                {{/if}}</li>
+            </ul>
+            {{#each recipes as |recipe| }}
+            <img src="{{recipe.header_img}}">
+{{/each}}
+        </div>
+        <div class="nav-content">
+        </div>
+        </div>
+    </nav>
+    <main class="container">
+
+      <!-- Render the sub layout -->
+      {{{ body }}}
+
+    </main>
+    <footer>
+      <p>sarApp &#169 2022</p>
+    </footer>
+  </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+   
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+</html>

@@ -17,7 +17,7 @@ Recipe.init(
     allowNull: false,
     },
     ingredients: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: false,
     },
     instructions: {
@@ -48,6 +48,14 @@ Recipe.init(
     //   key: 'id'
     // },
     },
+    img_url: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      },
+    header_img: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      },
     },
   {
     sequelize,

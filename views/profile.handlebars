@@ -1,0 +1,32 @@
+<div id="profile-info">
+    <h1>{{User.name}}</h1>
+    <h2>Check out all the recipes you've created!</h2>
+</div>
+
+<section id="recipeFlexCards">
+   {{#each Recipe}}
+    <div class="row">
+        <div class="col s3">
+            <div class="card">
+                <div class="card-image">
+                <img src="{{imageUrl}}">
+                    <span class="card-title" <a href="/recipe/{{id}}">{{dish_name}}</span>
+                </div>
+                <div class="card-content">
+                    <p>Written by {{Recipe.UserId}}</p>
+                </div>
+                <div class="card-action">
+                    <button class="regionBtn">{{regions}}</button>
+                    <button class="dietaryBtn">{{dietary}}</button>
+                </div>
+                <div class="card-action" id="edit-delete-recipe">
+                    <button class="editBtn">Edit Recipe</button>
+                    <button class="deleteBtn">Delete Recipe</button>
+                </div>
+                </div>
+            </div>
+        </div>
+  </div>
+    <script src="/js/editRecipe.js"></script>
+    <script src="/js/deleteRecipe.js"></script>
+</section>
