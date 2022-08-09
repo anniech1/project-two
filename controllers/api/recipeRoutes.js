@@ -44,7 +44,7 @@ router.post('/img', upload.single("picture"), async (req, res) => {
   return res.json({ picture: req.file.path });
 });*/
 
-// posting new recipe ??
+// posting new recipe
 router.post('/', withAuth,upload.single("img_url"), async (req, res) => {
   try {
     const newRecipe = await Recipe.create({
@@ -76,6 +76,7 @@ router.put('/', withAuth, async (req, res) => {
 
 // edit existing recipe
 // url: port/api/recipes/ID NUMBER
+// pause until MVP is done
 router.put('/:id', async (req,res)=>{
   try{
     const editRecipe = await Recipe.update(
@@ -85,8 +86,7 @@ router.put('/:id', async (req,res)=>{
         instructions: req.body.instructions,
         regions: req.body.regions,
         dietary: req.body.dietary,
-        img_url: req.body.img_url,
-        header_img: req.body.header_img
+        img_url: req.body.img_url
       },
       {
         where: {
