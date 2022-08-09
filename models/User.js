@@ -72,14 +72,10 @@ User.init(
         len: [8],
     },
     },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     recipeLibrary: {
       type: DataTypes.BOOLEAN,
       default: true,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {
