@@ -15,7 +15,8 @@ body{
 
 .nav-title{
     color: lightgoldenrodyellow;
-    font-style: italic;
+    /* font-style: italic; */
+    font-family: Overpass Light, Didot, Georgia, serif;
 }
 
 .login-background{
@@ -163,4 +164,13 @@ body{
     border-radius: 22px;
     font-family: Didot, Georgia, serif;
     padding: 20px;
+}
+
+footer{
+    height: 2em;
+    background-attachment: scroll;
+    background-color: #8B575C;
+    text-align: center;
+    color: white;
+    font-family: Overpass Light, Didot, Georgia, serif;
 }
