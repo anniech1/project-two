@@ -47,4 +47,3 @@ Recipe,
 Regions,
 Dietary,
 };
-

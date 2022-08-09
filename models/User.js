@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+
 /*
 const bcrypt = require("bcrypt")
 const sequelize = require('../config/connection');
@@ -36,6 +37,7 @@ User.init({
 */
 //need to review
 
+
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
@@ -72,14 +74,10 @@ User.init(
         len: [8],
     },
     },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     recipeLibrary: {
       type: DataTypes.BOOLEAN,
       default: true,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {

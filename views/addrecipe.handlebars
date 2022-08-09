@@ -1,0 +1,29 @@
+<div id:"add-recipe">
+    <h1>Add a Recipe!</h1>
+    <h2>Please enter the ingredients and directions for your recipe!</h2>
+</div>
+<div class="formCard">
+    <h2>Recipe Name</h2> 
+    <form action="" id="newRecipeForm">
+        <label for="recipe_name"><b>Recipe Name</b></label>
+        <input type="text" name="recipe_name" id="recipe-dish_name" placeholder="Enter Recipe Name">
+        <label for="ingredients"><b>Ingredients</b></label>
+        <input type="ingredients" name="recipe-ingredients" id="recipe-ingredients" placeholder="Enter Ingredients Here">
+        <label for="ingredients"><b>Ingredients</b></label>
+        <input type="instructions" name="recipe-instructions" id="recipe-instructions" placeholder="Enter Instructions Here">
+        
+        <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" id="recipe-image">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+
+        <button>Add Recipe!</button>
+    </form>
+</div>
+
+<script src="/js/postRecipe.js"></script>
