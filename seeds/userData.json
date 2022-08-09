@@ -3,7 +3,7 @@
       "name": "Asiya",
       "email": "asiya@hotmail.com",
       "password": "password",
-      "username":"as",
+    
       "recipeLibrary":true
     },
     {
@@ -19,7 +19,7 @@
       "name": "Akshata",
       "email": "akshata@aol.com",
       "password": "password345",
-      "username":"as",
+     
       "recipeLibrary":true
 
     },
@@ -27,7 +27,7 @@
       "name": "Annie",
       "email": "annie@msn.com",
       "password": "password111",
-      "username":"as",
+      
       "recipeLibrary":true
 
     }
