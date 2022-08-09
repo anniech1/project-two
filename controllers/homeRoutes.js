@@ -4,9 +4,14 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
+    // Get all recipes and JOIN with user data
     const recipeData = await Recipe.findAll({
-  
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
     });
 
     // Serialize data so the template can read it
