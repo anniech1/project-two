@@ -32,10 +32,14 @@ User.hasMany(Recipe, {
 onDelete: 'CASCADE'
 });
 
-Recipe.hasMany(Dietary)
+Recipe.belongsTo(User, {
+    onDelete: 'CASCADE'
+    });
+
+Recipe.hasMany(Dietary);
 
 
-Recipe.hasOne(Regions)
+Recipe.hasOne(Regions);
 
 module.exports = {
 User,
