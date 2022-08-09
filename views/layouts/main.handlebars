@@ -33,30 +33,31 @@
         {{/if}}
     <footer></footer>
 -->
+    <nav class="nav-extended white-text white lighten-5">
+        <div class="nav-wrapper">
+            <span class="nav-title">sarApp &#127807;</span>
+             <ul id="nav-mobile" class="left hide-on-med-and-down white-text">
+                <li><a href="/" class="white-text">Home</a></li>
+                <li><a href="/" class="dashboard white-text">Dashboard</a></li>
+                <li> {{#if logged_in}}
+                <a href="/profile" class="white-text">Profile</a> 
+            <li><button class="no-button white-text" id="logout">Logout</button></li>
+            <li>{{else}}
+                <a href="/login" class="white-text">Login</a>
+                {{/if}}</li>
+            </ul>
+        </div>
+              <!--<img src="header-art.png">-->
+        <div class="nav-content">
+        </div>
+        </div>
+    </nav>
 
-<nav class="nav-extended blue-text blue lighten-5">
-    <div class="nav-wrapper">
-      
-      <ul id="nav-mobile" class="left hide-on-med-and-down blue-text">
-        <li><a href="/" class="blue-text">Home</a></li>
-        <li><a href="/" class="dashboard blue-text">Dashboard</a></li>
-        <li> {{#if logged_in}}
-        <a href="/profile" class="blue-text">Profile</a> 
-        <li><button class="no-button blue-text" id="logout">Logout</button></li>
-       <li>{{else}}
-        <a href="/login" class="blue-text">Login</a>
-        {{/if}}</li>
-      </ul>
-       </div>
-       <div class="nav-content">
-      <span class="nav-title">The Recipes!!</span>
-    </div>
-  </nav>
-  
+    <main class="container">
 
-    <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
+
     </main>
     <footer>
       
