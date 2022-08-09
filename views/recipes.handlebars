@@ -1,4 +1,4 @@
-<section id="recipeFlexCards">
+<!--<section id="recipeFlexCards">
 {{#each Recipe}}
     <div class="row">
         <div class="col s12">
@@ -32,6 +32,29 @@
             </div>
         </div>
   </div>
-
 {{/each}}
+<<<<<<< HEAD
+</section>-->
+<img src="{{recipe.header_img}}">
+<div class="recipeFlexCards">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{{img_url}}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+          <a href="/recipe/{{id}}">{{dish_name}}
+          <i class="material-icons right">more_vert</i>
+        </span>
+       <p>Written by {{User.name}}</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>{{instructions}}</p>
+    </div>
+  </div>
+</div>
+<img class="activator" src="{{header_img}}">
+=======
 </section>
+>>>>>>> dev

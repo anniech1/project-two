@@ -1,25 +1,21 @@
-
-{{#each Recipes}}
-    <div class="row">
-        <div class="col s6">
-            <div class="card">
-                <div class="card-image">
-                <img src="{{imageUrl}}">
-                {{!^ so far this requires an image url to be assoicated with the Recipe model, but this will probably change when we run our image tech}}
-                <span class="card-title" <a href="/recipe/{{id}}">{{dish_name}}</span>
-                </div>
-                <div class="card-content">
-                <p>Written by {{Recipe.UserId}}</p>
-                {{!^ this needs the author's name or username to be associated with the data set for each recipe}}
-                </div>
-                <div class="card-action">
-                    <button class="regionBtn">{{regions}}</button>
-                    <button class="dietaryBtn">{{dietary}}</button>
-                </div>
-                </div>
-            </div>
-        </div>
+{{#each recipes as |recipe| }}
+<div class="recipeFlexCards">
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{{recipe.img_url}}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+          <a href="/recipe/{{recipe.id}}">{{recipe.dish_name}}
+          <i class="material-icons right">more_vert</i>
+        </span>
+       <p>Written by {{recipe.User.name}}</p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>{{recipe.instructions}}</p>
+    </div>
   </div>
-
+</div>
 {{/each}}
 </section> 
