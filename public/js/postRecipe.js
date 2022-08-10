@@ -9,34 +9,42 @@ addIngredientsBtn.addEventListener('click', function(){
   ingredientList.appendChild(newIngredients);
 });
 
-const samplerecipe=  {
-      
-    "dish_name": "Mawalahqqqqqqqqqq",
-    "ingredients": "eggs ,flour,water, sugar, salt",
-    "instructions": "to be announced",
-    "regions": "East Africa",
-    "dietary": "Halal",
-    "img_url":"https://res.cloudinary.com/dbusqnlkm/image/upload/v1659985915/cld-sample-4.jpg"
-    
-  }
-        console.log("submit1");
+var imgurl="";
+var myWidget = cloudinary.createUploadWidget({
+    cloudName: 'dbusqnlkm', 
+    uploadPreset: 'axaukuzt'}, (error, result) => { 
+      if (!error && result && result.event === "success") { 
+        console.log('Done! Here is the image info: ', result); 
+       
+      console.log("ak ", result.info.secure_url);
+     imgurl= result.info.secure_url;
+      }
+    }
+  )
+
+
+        console.log("s" +imgurl);
 const addnewrecipe= (e) =>{
    
         e.preventDefault();
-    
+     
+          
+         
+        
+        const ingredientsArr=document.querySelectorAll("#ingredients").value;
         console.log("submit");
         const recipeObj = {
-            dish_name:document.querySelector("#recipe-dish_name").value,
-            instructions:document.querySelector("#recipe-instructions").value,
-            ingredients:document.querySelector("#recipe-ingredients").value,
-           // region:document.querySelector("#recipe-region").value,
-           // dietary:document.querySelector("#dietary-region").value,
-             
+            dish_name:document.querySelector("#dish_name").value,
+            instructions:document.querySelector("#instructions").value,
+            ingredients:"ingredientsArr",
+            regions:"df",
+            dietary:"halal",
+            img_url:imgurl  
         }
     
         fetch("/api/recipes",{
             method:"POST",
-            body:JSON.stringify(samplerecipe),
+            body:JSON.stringify(recipeObj),
             headers:{
                 "Content-Type":"application/json"
                
@@ -51,5 +59,8 @@ const addnewrecipe= (e) =>{
     
 
 }
+document.getElementById("upload_widget").addEventListener("click", function(){
+    myWidget.open();
+  }, false);
 document.querySelector("#newRecipeForm").addEventListener("submit",addnewrecipe);
 
