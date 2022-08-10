@@ -11,14 +11,15 @@
                 </div>
                 <div class="card-content">
                     <div id="recipe-author">
-                        <p>Written by {{userId}}</p>
+                        <p>Written by {{user.name}}</p>
                     </div>
                     <div id="recipe-region">
                        From: <p>{{regions}}</p>
                     </div>
-                     <div id="recipe-time">
+                    {{!-- we don't have a timer key from recipe data -KG --}}
+                     {{!-- <div id="recipe-time">
                        Estimated time to prepare: <p>{{timer}} minutes</p>
-                    </div>
+                    </div> --}}
                      <div id="recipe-ingredients">
                        For this recipe, you'll need: <p>{{ingredients}}</p>
                     </div>
