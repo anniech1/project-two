@@ -29,26 +29,26 @@
 <script src="./js/postRecipe.js"></script>-->
 
 <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
-<div class="add-recipe">
-  <div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold">Submit Your Recipe</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead">Share your amazing recipies with food lovers accross the world. Fill out our form to get started!</p>
-    </div>
+
+<div class="px-4 py-5 my-5 text-center">
+  <h1 class="display-5 fw-bold">Submit Your Recipe</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead">Share your amazing recipies with thousands of web developers accross the world. Fill our form to get started.</p>
   </div>
+</div>
 
 <div class="row justify-content-center">
   <div class="col-8">
     <form id="newRecipeForm" enctype="multipart/form-data" method="POST">
       <div class="row g-3">
         <div class="col-12">
-          <label for="name" class="form-label" font-size="30 pt">Recipe Name</label>
+          <label for="name" class="form-label">Recipe Name</label>
           <input type="text" name="name" id="dish_name" class="form-control" required>
         </div>
         
         <div class="col-12">
           <label for="description" class="form-label">Description</label>
-          <textarea name="description" id="instructions" class="form-control" cols="30" rows="4"></textarea>
+          <textarea name="description" id="instructions" class="form-control" cols="30" rows="4" style="height: 120px"></textarea>
         </div>
 
         <div class="col-12">
@@ -66,16 +66,104 @@
         </div>
 
         <div class="col-12">
-          <label for="category">Select Category</label>
+          <label for="category">Select Regions</label>
           <select class="form-select form-control" name="category" aria-label="Category" id="region">
             <option selected>Select Category</option>
-            <option value="Thai">Thai</option>
-            <option value="American">American</option>
-            <option value="Chinese">Chinese</option>
-            <option value="Mexican">Mexican</option>
-            <option value="Indian">Indian</option>
+            <option value="North Africa">North Africa</option>
+            <option value="East Africa">East Africa</option>
+            <option value="Southern Africa">Southern Africa</option>
+            <option value="West Africa">West Africa</option>
+            <option value="Central Africa">Central Africa</option>
+            <option value="North Asia">North Asia</option>
+            <option value="South Asia">South Asia</option>
+            <option value="Central Asia">Central Asia</option>
+            <option value="North Asia">North Asia</option>
+            <option value="South Asia">South Asia</option>
+            <option value="Central Asia">Central Asia</option>
+            <option value="Southeast Asia">Southeast Asia</option>
+            <option value="East Asia">East Asia</option>
+            <option value="Western Asia">Western Asia</option>
+            <option value="Northern Europe">Northern Europe</option>
+            <option value="Eastern Europe">Eastern Europe</option>
+            <option value="Southern Europe">Southern Europe</option>
+            <option value="Western Europe">Western Europe</option>
+            <option value="Central Europe">Central Europe</option>
+            <option value="Australasia">Australasia</option>
+            <option value="Melanesia">Melanesia</option>
+            <option value="Micronesia">Micronesia</option>
+            <option value="Polynesia">Polynesia</option>
+            <option value="Central America">Central America</option>
+            <option value="North America">North America</option>
+            <option value="The Caribbeans">The Caribbeans</option>
+            <option value="South America">South America</option>
           </select>
         </div>
+<div class="col-12">
+     <label for="dietary">Select Dietary</label>
+ <!-- <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Halal</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Vegetarian">
+  <label class="form-check-label" for="inlineCheckbox2">Vegetarian</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Vegan">
+  <label class="form-check-label" for="inlineCheckbox3">Vegan</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Sugar-Free">
+  <label class="form-check-label" for="inlineCheckbox3">Sugar-Free</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbox3" value="Gluten-Free">
+  <label class="form-check-label" for="inlineCheckbox3">Gluten-Free</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Dairy-Free">
+  <label class="form-check-label" for="inlineCheckbox3">Dairy-Free</label>
+</div>-->
+
+
+ <p>
+      <label>
+        <input type="checkbox" id="halal" class="dietary"/>
+        <span>Halal</span>
+      </label>
+    </p>
+     <p>
+      <label>
+        <input type="checkbox" id="vegan" class="dietary"/>
+        <span>Vegan</span>
+      </label>
+    </p>
+     <p>
+      <label>
+        <input type="checkbox" id="vegetarian" class="dietary"/>
+        <span>Vegetarian</span>
+      </label>
+    </p>
+     <p>
+      <label>
+        <input type="checkbox" id="gluten-free" class="dietary" />
+        <span>Gluten-Free</span>
+      </label>
+    </p>
+     <p>
+      <label>
+        <input type="checkbox" id="dairy-free" class="dietary"/>
+        <span>Dairy-Free</span>
+      </label>
+    </p>
+     <p>
+      <label>
+        <input type="checkbox" id="sugar-free" class="dietary"/>
+        <span>Sugar-free</span>
+      </label>
+    </p>
+  
+</div>
 
         <div class="col-12">
           <label for="image">Product Image</label>
@@ -92,7 +180,6 @@
     </form>
 
   </div>
-</div>
 </div>
 <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script> 
 <script src="./js/postRecipe.js"></script>
