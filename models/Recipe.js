@@ -31,6 +31,27 @@ Recipe.init(
     dietary: { 
     type: DataTypes.STRING,
     allowNull: false,
+    allowNull: true,
+    // references: {
+    //   model: 'Regions',
+    //   key: 'id'
+    // },
+    },
+    dietary: { 
+    type: DataTypes.STRING,
+    allowNull: true,
+    // references: {
+    //   model: 'Dietary',
+    //   key: 'id'
+    // },
+    // },
+    // user_id: { 
+    // type: DataTypes.INTEGER,
+    // allowNull: false,
+    // references: {
+    //   model: 'User',
+    //   key: 'id'
+    // },
     },
     img_url: {
       type: DataTypes.STRING,

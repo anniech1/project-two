@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sarApp</title>
     <!--Import Google Icon Font-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -14,31 +19,14 @@
 <body>
 
 
-<nav class="nav-extended blue-text blue lighten-5">
-    <div class="nav-wrapper">
-      
-      <ul id="nav-mobile" class="left hide-on-med-and-down blue-text">
-        <li><a href="/" class="blue-text">Home</a></li>
-        <li><a href="/addrecipe" class="dashboard blue-text">Dashboard</a></li>
-        <li> {{#if logged_in}}
-        <a href="/profile" class="blue-text">Profile</a> 
-        <li><button class="no-button blue-text" id="logout">Logout</button></li>
-       <li>{{else}}
-        <a href="/login" class="blue-text">Login</a>
-        {{/if}}</li>
-      </ul>
-       </div>
-       <div class="nav-content">
-      <span class="nav-title">The Recipes!!</span>
-    </div>
-  </nav>
+
   
     <nav class="nav-extended white-text white lighten-5">
         <div class="nav-wrapper">
             <span class="nav-title">sarApp &#127807;</span>
              <ul id="nav-mobile" class="left hide-on-med-and-down white-text">
                 <li><a href="/" class="white-text">Home</a></li>
-                <li><a href="/" class="dashboard white-text">Dashboard</a></li>
+                <li><a href="/addrecipe" class="dashboard white-text">Dashboard</a></li>
                 <li> {{#if logged_in}}
                 <a href="/profile" class="white-text">Profile</a> 
             <li><button class="no-button white-text" id="logout">Logout</button></li>
@@ -46,9 +34,7 @@
                 <a href="/login" class="white-text">Login</a>
                 {{/if}}</li>
             </ul>
-            {{#each recipes as |recipe| }}
-            <img src="{{recipe.header_img}}">
-{{/each}}
+          
         </div>
         <div class="nav-content">
         </div>
@@ -64,6 +50,11 @@
       <p>sarApp &#169 2022</p>
     </footer>
   </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+ 
+</body>
+</html>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 

@@ -44,17 +44,19 @@ router.post('/img', upload.single("picture"), async (req, res) => {
   return res.json({ picture: req.file.path });
 });*/
 
-router.post('/', withAuth,upload.single("img_url"), async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
     const newRecipe = await Recipe.create({
       ...req.body,
-      'img_url':req.file.path, 
+     // 'img_url':req.file.path, 
       UserId: req.session.user_id,
     });
 
     res.status(200).json(newRecipe);
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
+
   }
 });
 
