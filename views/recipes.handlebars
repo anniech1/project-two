@@ -1,7 +1,7 @@
 
 {{!-- annie's code, not sure why it's not rendering --}}
+{{!-- {{#each recipes as |recipe| }} --}}
 <section id="recipeFlexCards">
-{{!-- {{#each Recipe}} --}}
     <div class="row">
         <div class="col s12">
             <div class="card">
@@ -11,7 +11,8 @@
                 </div>
                 <div class="card-content">
                     <div id="recipe-author">
-                        <p>Written by {{name}}</p>
+                        {{!-- y'all, I CANNOT get the author to show up here. leaving until later --}}
+                        <p>Written by {{recipe.User.name}}</p>
                     </div>
                     <div id="recipe-region">
                        From: <p>{{regions}}</p>
@@ -22,6 +23,7 @@
                     </div> --}}
                      <div id="recipe-ingredients">
                        For this recipe, you'll need: <p>{{ingredients}}</p>
+                       {{!-- leaving ingredients as IS b/c we have to create a table for the list. Nice to have/Future --}}
                     </div>
                      <div id="recipe-instructions">
                        To create {{dish_name}}: <p>{{instructions}}</p>
@@ -45,4 +47,4 @@
 
 
 {{!-- Does not seem to make a difference  -KG --}}
-<script src="./js/recipePage.js"></script> 
+{{!-- <script src="./js/recipePage.js"></script>  --}}
