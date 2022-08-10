@@ -7,8 +7,9 @@ body{
   flex-direction: column;
 }
 
-.h4{
-    color: white;
+.profile{
+    color: black;
+    font: 1em Overpass Light;
     font-family:  Overpass Light, Didot, Georgia, serif, Laviossa,;
 }
 
@@ -35,7 +36,10 @@ main {
 .login-background{
     background-color: #B08286;
 }
-
+.recipe-page{
+    color: black;
+    font-family: Overpass Light, Didot, Georgia, serif;
+}
 .welcome-card{
     display: flex;
     font-size: 16pt;
@@ -73,8 +77,8 @@ main {
     font-family: Playfair Display, Didot, Georgia, serif;
     padding: 10px;
     background-color: #C98986;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
 }
