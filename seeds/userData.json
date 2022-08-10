@@ -1,0 +1,34 @@
+[
+    {
+      "name": "Asiya",
+      "email": "asiya@hotmail.com",
+      "password": "password",
+    
+      "recipeLibrary":true
+    },
+    {
+      "name": "Kristina",
+      "email": "kristina@gmail.com",
+      "password": "password123",
+      
+      "recipeLibrary":true
+
+
+    },
+    {
+      "name": "Akshata",
+      "email": "akshata@aol.com",
+      "password": "password345",
+     
+      "recipeLibrary":true
+
+    },
+    {
+      "name": "Annie",
+      "email": "annie@msn.com",
+      "password": "password111",
+      
+      "recipeLibrary":true
+
+    }
+  ]

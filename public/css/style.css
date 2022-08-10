@@ -1,0 +1,181 @@
+body{
+    font-family:  Overpass Light, Didot, Georgia, serif, Laviossa,;
+    color: black;
+    background-color: #FEF0EB;
+}
+
+.nav-wrapper{
+    font-family: Overpass Light, Didot, Georgia, serif;
+    color: white;
+    background-color: #193C36;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.nav-title{
+    color: lightgoldenrodyellow;
+    /* font-style: italic; */
+    font-family: Overpass Light, Didot, Georgia, serif;
+}
+
+.login-background{
+    background-color: #B08286;
+}
+
+.welcome-card{
+    display: flex;
+    font-size: 16pt;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #C98986;
+    border-radius: 25px;
+    font-family: Didot, Georgia, serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+.formCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9CAF88;
+    color: black;
+    font-family: Didot, Georgia, serif;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.recipeFlexCards {
+    display: flex;
+    color: black;
+    text-emphasis-color: black;
+    font-family: Playfair Display, Didot, Georgia, serif;
+    padding: 10px;
+    background-color: #C98986;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tagBtn{
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-family: Playfair Display, Didot, Georgia, serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid #F6BDD1;
+}  
+.tagBtn:hover {
+    background-color: #F6BDD1;
+    color: white;
+}
+
+.postBtn{
+    flex: right;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-family: Playfair Display, Didot, Georgia, serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid #C98986;
+}  
+.postBtn:hover {
+    background-color: #C98986;
+    color: white;
+}
+
+.editBtn{
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-family: Playfair Display, Didot, Georgia, serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid #9CAF88;
+}  
+.editBtn:hover {
+    background-color: #9CAF88;
+    color: white;
+}
+
+.deleteBtn{
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-family: Playfair Display, Didot, Georgia, serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 3px solid #8B575C;
+}  
+.deleteBtn:hover {
+    background-color: #8B575C;
+    color: white;
+}
+
+.profile-info{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    border: 5px solid #C98986;
+    color: black;
+    border-radius: 22px;
+    font-family: Didot, Georgia, serif;
+    padding: 20px;
+}
+
+footer{
+    height: 2em;
+    background-attachment: scroll;
+    background-color: #8B575C;
+    text-align: center;
+    color: white;
+    font-family: Overpass Light, Didot, Georgia, serif;
+}
+
+#upload_widget
+{
+    background-color: #193C36;
+}

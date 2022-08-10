@@ -1,0 +1,80 @@
+
+{{!-- annie's code, not sure why it's not rendering --}}
+{{!-- {{#each recipes as |recipe| }} --}}
+<!--
+<section id="recipeFlexCards">
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-image">
+                <img src="{{img_url}}">
+                <span class="card-title" <a href="/recipe/{{id}}">{{dish_name}}</span>
+                </div>
+                <div class="card-content">
+                    <div id="recipe-author">
+                        {{!-- y'all, I CANNOT get the author to show up here. leaving until later --}}
+                        <p>Written by {{User.name}}</p>
+                    </div>
+                    <div id="recipe-region">
+                       From: <p>{{regions}}</p>
+                    </div>
+                    {{!-- we don't have a timer key from recipe data -KG --}}
+                     {{!-- <div id="recipe-time">
+                       Estimated time to prepare: <p>{{timer}} minutes</p>
+                    </div> --}}
+                     <div id="recipe-ingredients">
+                       For this recipe, you'll need: <p>{{ingredients}}</p>
+                       {{!-- leaving ingredients as IS b/c we have to create a table for the list. Nice to have/Future --}}
+                    </div>
+                     <div id="recipe-instructions">
+                       To create {{dish_name}}: <p>{{instructions}}</p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <button class="regionBtn">{{regions}}</button>
+                    <button class="dietaryBtn">{{dietary}}</button>
+                </div>
+                </div>
+            </div>
+        </div>
+  </div>
+{{!-- {{/each}} --}}
+</section>
+
+{{!-- <h1>One Recipe!</h1>
+<h1>{{dish_name}}</h1>
+<h2>Ingredients</h2>
+<p>{{ingredients}}</p> --}}
+
+
+{{!-- Does not seem to make a difference  -KG --}}
+{{!-- <script src="./js/recipePage.js"></script>  --}} -->
+
+
+  <div class="row">
+    <div class="col-12 col-md-4">
+     <img src="{{img_url}}" class="img-fluid sticky-top" style="top: 20px;" alt="<%- recipe.name %>" loading="lazy">
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="row">
+        <div class="col-12"><h1><a href="/recipe/{{id}}">{{dish_name}}</h1></div>
+        <div class="col-12 mb-4"><i class="bi bi-tag"></i>{{dietary}}</div>
+        <div class="col-12" style="white-space: pre-line;">
+          <h4>Cooking Instructions</h4>
+         {{instructions}}
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-12">
+          <h4>Ingredients</h4>
+          <ul class="list-group list-group-flush">
+            
+              <li class="list-group-item">{{ingredients}}</li>
+            
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="./js/postRecipe.js"></script>
+
