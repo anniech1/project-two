@@ -26,6 +26,11 @@ Recipe.init(
     },
     regions: { 
     type: DataTypes.STRING,
+    allowNull: false,
+    },
+    dietary: { 
+    type: DataTypes.STRING,
+    allowNull: false,
     allowNull: true,
     // references: {
     //   model: 'Regions',

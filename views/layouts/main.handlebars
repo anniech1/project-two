@@ -42,10 +42,14 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+      <li><a href="sass.html">Home</a></li>
+      {{#if logged_in}}
+      <li><a href="badges.html">Profile</a></li>
+      <li><a href="collapsible.html">Add Recipe</a></li>
+      <li><a href="mobile.html">Logout</a></li>
+      {{else}}
+      <li><a href="mobile.html">Login</a></li>
+      {{/if}}
     </ul>
 
     <main class="container">
@@ -57,7 +61,7 @@
     
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-<script src="./js/script.js"> </script>
+<script src="public/js/script.js"> </script>
  
 </body>
 <footer>
@@ -76,7 +80,6 @@
 
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="./js/script.js"> </script>
 </body>
 </html>
 
