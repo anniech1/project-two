@@ -1,4 +1,4 @@
-let addIngredientsBtn = document.getElementById('addIngredientsBtn');
+/*let addIngredientsBtn = document.getElementById('addIngredientsBtn');
 let ingredientList = document.querySelector('.ingredientList');
 let ingredeintDiv = document.querySelectorAll('.ingredeintDiv')[0];
 
@@ -10,7 +10,7 @@ addIngredientsBtn.addEventListener('click', function(){
   let input = newIngredients.getElementsByTagName('input')[0];
   input.value = '';
   ingredientList.appendChild(newIngredients);
-});
+});*/
 
 
 
@@ -70,7 +70,7 @@ const addnewrecipe= (e) =>{
         const recipeObj = {
             dish_name:document.querySelector("#dish_name").value,
             instructions:document.querySelector("#instructions").value,
-            ingredients:ingredientList.toString(),
+            ingredients:document.querySelector("#ingredients").value,
             regions:region,
             dietary:listArray.toString(),
             img_url:imgurl  
