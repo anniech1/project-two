@@ -67,8 +67,8 @@
 
         <div class="col-12">
           <label for="category">Select Regions</label>
-          <select class="form-select form-control" name="category" aria-label="Category" id="region">
-            <option selected>Select Category</option>
+          <select class="form-select form-control" name="category" aria-label="Category" id="region" >
+            <option selected  >Select Category</option>
             <option value="North Africa">North Africa</option>
             <option value="East Africa">East Africa</option>
             <option value="Southern Africa">Southern Africa</option>
@@ -128,40 +128,41 @@
 
  <p>
       <label>
-        <input type="checkbox" id="halal" class="dietary"/>
+        <input type="checkbox" id="halal" class="dietary" name="dietary" value="Halal"/>
         <span>Halal</span>
       </label>
     </p>
      <p>
       <label>
-        <input type="checkbox" id="vegan" class="dietary"/>
+        <input type="checkbox" id="vegan" class="dietary" name="dietary" value="Vegan"/>
         <span>Vegan</span>
       </label>
     </p>
      <p>
       <label>
-        <input type="checkbox" id="vegetarian" class="dietary"/>
+        <input type="checkbox" id="vegetarian" class="dietary" name="dietary" value="Vegetarian"/>
         <span>Vegetarian</span>
       </label>
     </p>
      <p>
       <label>
-        <input type="checkbox" id="gluten-free" class="dietary" />
+        <input type="checkbox" id="gluten-free" class="dietary" name="dietary" value="Gluten-Free" />
         <span>Gluten-Free</span>
       </label>
     </p>
      <p>
       <label>
-        <input type="checkbox" id="dairy-free" class="dietary"/>
+        <input type="checkbox" id="dairy-free" class="dietary" name="dietary" value="Dairy-Free"/>
         <span>Dairy-Free</span>
       </label>
     </p>
      <p>
       <label>
-        <input type="checkbox" id="sugar-free" class="dietary"/>
+        <input type="checkbox" id="sugar-free" class="dietary" name="dietary" value="Sugar-free"/>
         <span>Sugar-free</span>
       </label>
     </p>
+    <p id="result"></p>
   
 </div>
 
