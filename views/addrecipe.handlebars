@@ -1,10 +1,10 @@
-<div id:"add-recipe">
+<div id="add-recipe">
     <h1>Add a Recipe!</h1>
     <h2>Please enter the ingredients and directions for your recipe!</h2>
 </div>
 <div class="formCard">
     <h2>Recipe Name</h2> 
-    <form action="" id="newRecipeForm">
+    <form id="newRecipeForm" onsubmit="addnewrecipe">
         <label for="recipe_name"><b>Recipe Name</b></label>
         <input type="text" name="recipe_name" id="recipe-dish_name" placeholder="Enter Recipe Name">
         <label for="ingredients"><b>Ingredients</b></label>
@@ -22,8 +22,8 @@
       </div>
     </div>
 
-        <button>Add Recipe!</button>
+        <button type="submit">Add Recipe!</button>
     </form>
 </div>
 
-<script src="/js/postRecipe.js"></script>
+<script src="./js/postRecipe.js"></script>
