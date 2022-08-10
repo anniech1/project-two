@@ -56,7 +56,7 @@
           <small>Example: Ice</small>
           <div class="ingredientList">
             <div class="ingredeintDiv mb-1">
-              <input type="text" name="ingredients" class="form-control">
+              <input type="text" name="ingredients" class="form-control" id="ingredients">
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@
 
         <div class="col-12">
           <label for="category">Select Regions</label>
-          <select class="form-select form-control" name="category" aria-label="Category" id="region" >
+          <select class="form-select form-control" name="category" aria-label="Category" id="region" onchange="getSelectValue();">
             <option selected  >Select Category</option>
             <option value="North Africa">North Africa</option>
             <option value="East Africa">East Africa</option>
