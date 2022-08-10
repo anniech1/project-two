@@ -94,7 +94,7 @@ const addnewrecipe= (e) =>{
         const recipeObj = {
             dish_name:document.querySelector("#dish_name").value,
             instructions:document.querySelector("#instructions").value,
-            ingredients:"ingredientsArr",
+            ingredients:document.querySelector("#ingredients").value,
             regions:region,
             dietary:dietarychecked,
             img_url:imgurl  

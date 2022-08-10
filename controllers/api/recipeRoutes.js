@@ -60,6 +60,8 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+// create new recipe
+// url: port/api/recipes
 router.put('/', withAuth, async (req, res) => {
   try {
     const newRecipe = await Recipe.create({
@@ -73,6 +75,30 @@ router.put('/', withAuth, async (req, res) => {
   }
 });
 
+// edit existing recipe
+// url: port/api/recipes/ID NUMBER
+// pause until MVP is done
+router.put('/:id', async (req,res)=>{
+  try{
+    const editRecipe = await Recipe.update(
+      {
+        dish_name: req.body.recipe_name,
+        ingredients: req.body.ingredients,
+        instructions: req.body.instructions,
+        regions: req.body.regions,
+        dietary: req.body.dietary,
+        img_url: req.body.img_url
+      },
+      {
+        where: {
+          id: req.params.id,
+        }
+      });
+      res.status(200).json(dish);
+  } catch (err) {
+    res.status(500).json(err);
+  };
+});
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
