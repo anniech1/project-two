@@ -119,7 +119,6 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 // session stuff!
 const sess = {
   secret: process.env.SESSION_SECRET,
@@ -131,7 +130,6 @@ const sess = {
 };
 app.use(session(sess));
 app.use("/", allRoutes);
-
 db.sync({force: false}).then(() => {
   app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
