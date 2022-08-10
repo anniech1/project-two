@@ -35,8 +35,8 @@ router.get('/recipe/:id', async (req, res) => {
     const recipeData = await Recipe.findByPk(req.params.id, {
       include: [
         {
-          model: User
-          // attributes: ['name'],
+          model: User,
+          attributes: ['name']
         },
       ],
     });
@@ -116,15 +116,15 @@ router.get('/addrecipe', withAuth, async (req, res) => {
 
 // route attempt for recipe page:
 // YES works. now to get the template page working.
-router.get('/recipes/:id',(req,res)=>{
-  Recipe.findByPk(req.params.id,{
-    include:[User]
-  }).then(data=>{
-    const hbsData = data.toJSON()
-    console.log(hbsData)
-    res.render('recipes',hbsData)
-  })
-})
+// router.get('/recipes/:id',(req,res)=>{
+//   Recipe.findByPk(req.params.id,{
+//     include:[User]
+//   }).then(data=>{
+//     const hbsData = data.toJSON()
+//     console.log(hbsData)
+//     res.render('recipes',hbsData)
+//   })
+// });
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route

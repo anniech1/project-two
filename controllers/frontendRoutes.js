@@ -27,29 +27,4 @@ router.get('/', async (req, res) => {
   }
 });
 
-// individual recipe page route ?
-// url: port/recipe/recipeIdNumber
-router.get('/recipe/:id', async (req, res) => {
-  try {
-    const recipeData = await Recipe.findByPk(req.params.id, {
-      include: [
-        {
-          model: User
-          // attributes: ['name'],
-        },
-      ],
-    });
-
-    const recipe = recipeData.get({ plain: true });
-
-    res.render('recipes', {
-      ...recipe,
-      logged_in: req.session.logged_in
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-
 module.exports = router;
