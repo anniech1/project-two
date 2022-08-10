@@ -44,7 +44,7 @@ router.post('/img', upload.single("picture"), async (req, res) => {
   return res.json({ picture: req.file.path });
 });*/
 
-router.post('/', withAuth,upload.single("img_url"), async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
     const newRecipe = await Recipe.create({
       ...req.body,

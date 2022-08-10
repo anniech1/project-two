@@ -26,7 +26,7 @@ Recipe.init(
     },
     regions: { 
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
     // references: {
     //   model: 'Regions',
     //   key: 'id'
@@ -34,7 +34,7 @@ Recipe.init(
     },
     dietary: { 
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
     // references: {
     //   model: 'Dietary',
     //   key: 'id'

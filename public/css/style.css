@@ -174,3 +174,8 @@ footer{
     color: white;
     font-family: Overpass Light, Didot, Georgia, serif;
 }
+
+#upload_widget
+{
+    background-color: #193C36;
+}
