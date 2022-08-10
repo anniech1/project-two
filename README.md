@@ -33,10 +33,11 @@
 
 ## Screenshot
 
-### 
+### <img width="1128" alt="2022-08-10" src="https://user-images.githubusercontent.com/104933717/184026360-7170b715-6644-4f1b-986a-70da76b30e92.png">
+### <img width="1128" alt="2022-08-10 (1)" src="https://user-images.githubusercontent.com/104933717/184026496-dddcc052-43f1-41ee-8d90-dc12148410e6.png">
+
 
 ## Deployed Link
-
 ### https://sarapprecipes.herokuapp.com/
 
 
