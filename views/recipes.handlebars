@@ -50,15 +50,23 @@
 {{!-- Does not seem to make a difference  -KG --}}
 {{!-- <script src="./js/recipePage.js"></script>  --}} -->
 
-<div class="recipe-page">
+<!--k - recipe page-->
   <div class="row">
     <div class="col-12 col-md-4">
-     <img src="{{img_url}}" class="img-fluid sticky-top" style="top: 20px;" alt="<%- recipe.name %>" loading="lazy">
+     <img src="{{img_url}}" alt="recipe_image" class="img-fluid sticky-top" style="top: 20px;" alt="<%- recipe.name %>" loading="lazy">
     </div>
     <div class="col-12 col-md-8">
       <div class="row">
         <div class="col-12"><h1><a href="/recipe/{{id}}">{{dish_name}}</h1></div>
         <div class="col-12 mb-4"><i class="bi bi-tag"></i>{{dietary}}</div>
+         <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="https://res.cloudinary.com/dbusqnlkm/image/upload/v1660179399/world_nf60zr.png" alt="regions" class="circle">
+      <span class="title">Region</span>
+      <p>{{regions}} </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    </ul>
         <div class="col-12" style="white-space: pre-line;">
           <h4>Cooking Instructions</h4>
          {{instructions}}
@@ -76,5 +84,5 @@
       </div>
     </div>
   </div>
-<script src="./js/postRecipe.js"></script>
-</div>
+
+
