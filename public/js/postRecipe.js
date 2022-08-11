@@ -12,7 +12,10 @@ addIngredientsBtn.addEventListener('click', function(){
   ingredientList.appendChild(newIngredients);
 });*/
 
-
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems, options);
+});
 
 
 
@@ -85,7 +88,9 @@ const addnewrecipe= (e) =>{
             }
         }).then(res=>{
             if(res.ok){
-               location.reload()
+              alert("Added a new recipe successfully!!!")
+              
+               location.reload();
             } else {
                 alert("Error posting recipe")
             }
