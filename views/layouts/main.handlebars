@@ -17,11 +17,9 @@
 </head>
 
 <body>
-
-  
     <nav class="nav-extended white-text white lighten-5">
         <div class="nav-wrapper">
-            <span class="nav-title center">sarApp </span>
+            <span class="nav-title">sarApp </span>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
              <ul id="nav-mobile" class="left hide-on-med-and-down white-text">
@@ -43,16 +41,15 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-     <li><a href="/" class="white-text">Home</a></li>
-      
-                <li> {{#if logged_in}}
-      <a href="/profile" class="white-text">Profile</a> 
-       <li><a href="/addrecipe" class="dashboard white-text">Add Recipe</a></li>
-              <li><a class=" white-text" id="logout">Logout</a></li>
-              <li>{{else}}
-                <a href="/login" class="white-text">Login</a>
-                {{/if}}</li>
-            </ul>
+      <li><a href="sass.html">Home</a></li>
+      {{#if logged_in}}
+      <li><a href="badges.html">Profile</a></li>
+      <li><a href="collapsible.html">Add Recipe</a></li>
+      <li><a href="mobile.html">Logout</a></li>
+      {{else}}
+      <li><a href="mobile.html">Login</a></li>
+      {{/if}}
+    </ul>
 
     <main class="container">
 

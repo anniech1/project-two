@@ -3,7 +3,7 @@ const router = express.Router();
 const apiRoutes = require("./api")
 const homeRoutes = require('./homeRoutes');
 const frontendRoutes = require('./frontendRoutes');
-//ak- Routes
+
 // router.get('/',(req,res)=>{
 //     res.render("home")
 // })

@@ -1,34 +1,30 @@
-
+<div class="profile">
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h3>Welcome, {{name}}!</h3>
   </div>
 </div>
 
+<!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Add a new Recipe</a>
 
-
- <div class="col-md-6 recipe-list">
-    <h3>Current Recipes:</h3>
- </div>
-{{#each recipes as |recipe| }}
-<div class="recipeFlexCards ">
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="{{recipe.img_url}}">
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Recipe</h4>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="recipe_name" type="text" class="validate">
+          <label for="recipe_name">Recipe Name</label>
+        </div>
+      </div>
     </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">
-          <a href="/recipe/{{recipe.id}}">{{recipe.dish_name}}
-          <i class="material-icons right">more_vert</i>
-        </span>
-       <p>Written by {{recipe.User.name}}</p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>{{recipe.instructions}}</p>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
+
+<script src="./js/profile.js"></script>
 </div>
-{{/each}}
-
-
