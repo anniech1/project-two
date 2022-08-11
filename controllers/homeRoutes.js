@@ -56,8 +56,33 @@ router.get('/recipe/:id', async (req, res) => {
 // profile page for each logged in user
 router.get('/profile', withAuth, async (req, res) => {
   try {
+    const recipeData = await Recipe.findAll({
+      where: {
+        UserId: req.session.logged_in
+      },
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const recipes = recipeData.map((recipe) => recipe.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render('profile', { 
+      recipes, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
+    /*const userData = await User.findByPk(req.session.user_id, {
    
     });
 
@@ -70,7 +95,7 @@ router.get('/profile', withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
+});*/
 
 
 // Use withAuth middleware to prevent access to route
