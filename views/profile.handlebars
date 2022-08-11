@@ -1,16 +1,18 @@
 
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+
+    <h2>Welcome, {{recipes.1.User.name}}!!! </h2>
+
   </div>
 </div>
-
 
 
  <div class="col-md-6 recipe-list">
     <h3>Current Recipes:</h3>
  </div>
 {{#each recipes as |recipe| }}
+  
 <div class="recipeFlexCards ">
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">

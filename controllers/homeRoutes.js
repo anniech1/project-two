@@ -58,7 +58,7 @@ router.get('/profile', withAuth, async (req, res) => {
   try {
     const recipeData = await Recipe.findAll({
       where: {
-        UserId: req.session.logged_in
+        UserId: req.session.user_id
       },
       include: [
         {
