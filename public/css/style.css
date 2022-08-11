@@ -2,20 +2,6 @@ body{
     font-family:  Overpass Light, Didot, Georgia, serif, Laviossa,;
     color: black;
     background-color: #FEF0EB;
-    display: flex;
-    min-height: 100vh;
-  flex-direction: column;
-}
-
-.profile{
-    color: black;
-    font: 1em Overpass Light;
-    font-family:  Overpass Light, Didot, Georgia, serif, Laviossa,;
-}
-
-main {
-    flex: 1 0 auto;
-    font-family:  Overpass Light, Didot, Georgia, serif, Laviossa,;
 }
 
 .nav-wrapper{
@@ -32,14 +18,11 @@ main {
     /* font-style: italic; */
     font-family: Overpass Light, Didot, Georgia, serif;
 }
-
+/*
 .login-background{
     background-color: #B08286;
 }
-.recipe-page{
-    color: black;
-    font-family: Overpass Light, Didot, Georgia, serif;
-}
+
 .welcome-card{
     display: flex;
     font-size: 16pt;
@@ -77,8 +60,8 @@ main {
     font-family: Playfair Display, Didot, Georgia, serif;
     padding: 10px;
     background-color: #C98986;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -171,7 +154,7 @@ main {
     background-color: #8B575C;
     color: white;
 }
-
+*/
 .profile-info{
     display: flex;
     align-items: left;
@@ -191,55 +174,11 @@ footer{
     color: white;
     font-family: Overpass Light, Didot, Georgia, serif;
 }
-/* .page-container {
-    position: relative;
-    min-height: 100vh;
-}
-.content-wrap {
-    padding-bottom: 2.5rem;
-} */
-.card-style {
-    background: #C98986(235, 223, 223, 0.7);
-    box-shadow: -3px -3px 9px white,
-    3px 3px 7px white(147, 149, 151, 0.671);
-    color: white;
-    padding: 20pt;
-    margin-top: 40pt;
-    background: url("https://shttps://cdn.winsightmedia.com/platform/files/public/2022-06/background/800x420/shutterstock_754732342.jpg?VersionId=brvSSagb7k_Zft4UICVZHW8OOUPoe368tatic.image.png.co.uk/s3fs-public/thumbnails/image/2017/03/23/17/romulo-cafe-food.jpg?width=1200.jpg");
-
-}
-.login-card{
-    box-sizing: border-box;
-    background: url("https://shttps://cdn.winsightmedia.com/platform/files/public/2022-06/background/800x420/shutterstock_754732342.jpg?VersionId=brvSSagb7k_Zft4UICVZHW8OOUPoe368tatic.image.png.co.uk/s3fs-public/thumbnails/image/2017/03/23/17/romulo-cafe-food.jpg?width=1200.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 900px;
-    position: center;  
-}
-
-.login-title{
-    text-align: center;
-    color: #8B575C;
-    font-size: 32pt;
-    font-family: Overpass Light, Didot, Georgia, serif;
-}
-
-/* .login-footer{
-        height: 2em;
-        /* bottom: 0; */
-        /* width: 100%; */
-        /* position: absolute; */
-        background-attachment: scroll;
-        background-color: #120d0e;
-        text-align: center;
-        color: white;
-} */
-#upload_widget{
+.sidenav{
     background-color: #193C36;
 }
 
-.add-recipe{
-    font-family: Overpass Light, Didot, Georgia, serif;
+#upload_widget
+{
+    background-color: #193C36;
 }
