@@ -18,7 +18,7 @@ body{
     /* font-style: italic; */
     font-family: Overpass Light, Didot, Georgia, serif;
 }
-
+/*
 .login-background{
     background-color: #B08286;
 }
@@ -154,7 +154,7 @@ body{
     background-color: #8B575C;
     color: white;
 }
-
+*/
 .profile-info{
     display: flex;
     align-items: left;
@@ -173,6 +173,9 @@ footer{
     text-align: center;
     color: white;
     font-family: Overpass Light, Didot, Georgia, serif;
+}
+.sidenav{
+    background-color: #193C36;
 }
 
 #upload_widget
